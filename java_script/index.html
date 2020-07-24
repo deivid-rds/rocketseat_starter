@@ -16,20 +16,18 @@
         
         function retornaSexo(sexo){
             
-            //M, F
-            //Masculino, Feminino
-            
-            if(sexo === 'M'){
-                return 'Masculino'
-            }else if(sexo === 'F'){
-                return 'Feminino'
-            }else {
-                return 'Sexo indefinido'
+            switch(sexo){
+                case 'M': 
+                    return 'Masculino'
+                case 'F':
+                    return 'Feminino'
+                default:
+                    return 'Sexo indefinido'
             }
             
         }
 
-        console.log(retornaSexo('R'))
+        console.log(retornaSexo('F'))
 
     </script>
     
