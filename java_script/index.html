@@ -14,20 +14,26 @@
 
     <script>
         
-        function retornaSexo(sexo){
-            
-            switch(sexo){
-                case 'M': 
-                    return 'Masculino'
-                case 'F':
-                    return 'Feminino'
-                default:
-                    return 'Sexo indefinido'
-            }
-            
+        var sexo = 'M', idade = 23
+
+        //AND
+        if(sexo === 'M' && idade >= 18){
+            console.log('OK')
         }
 
-        console.log(retornaSexo('F'))
+        //OR
+        if(sexo === 'F' || idade >= 18){
+            console.log('OK')
+        }
+
+        //NOT
+        if(sexo !== 'F'){
+            console.log('OK')
+        }
+
+        //NOT
+        var masculino = (sexo === 'M')
+        console.log(masculino)
 
     </script>
     
