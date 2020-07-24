@@ -14,18 +14,16 @@
 
     <script>
         
-        //FOR
-        for(var i = 0; i <= 100; i++){
-            console.log(i)
+        function exibeAlgo1(){
+            console.log('Hello world1')
         }
 
-        //WHILE
-        var j = 219354872
-        while(j > 50){
-            console.log(j)
-
-            j /= 5
+        function exibeAlgo2(){
+            console.log('Hello world2')
         }
+
+        setInterval(exibeAlgo1, 1000)    //exibe algo a cada 1 segundo
+        setTimeout (exibeAlgo2, 5000)    //exibe ago depois de 5 segundos
 
     </script>
     
