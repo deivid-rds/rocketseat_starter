@@ -14,13 +14,22 @@
 
     <script>
         
-        function soma(numero1, numero2){
-            var resultado = numero1 + numero2
-
-            return resultado
+        function retornaSexo(sexo){
+            
+            //M, F
+            //Masculino, Feminino
+            
+            if(sexo === 'M'){
+                return 'Masculino'
+            }else if(sexo === 'F'){
+                return 'Feminino'
+            }else {
+                return 'Sexo indefinido'
+            }
+            
         }
 
-        console.log(soma(10, 6))
+        console.log(retornaSexo('R'))
 
     </script>
     
