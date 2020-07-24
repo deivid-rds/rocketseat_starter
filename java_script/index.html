@@ -14,26 +14,18 @@
 
     <script>
         
-        var sexo = 'M', idade = 23
+        var sexo = 'M'
 
-        //AND
-        if(sexo === 'M' && idade >= 18){
-            console.log('OK')
+        if(sexo === 'M'){
+            console.log('Masculino')
+        } else {
+            console.log('Feminino')
         }
 
-        //OR
-        if(sexo === 'F' || idade >= 18){
-            console.log('OK')
-        }
+        //Condição ternária
+        var retorno = (sexo === 'M') ? 'Masculino' : 'Feminino'
 
-        //NOT
-        if(sexo !== 'F'){
-            console.log('OK')
-        }
-
-        //NOT
-        var masculino = (sexo === 'M')
-        console.log(masculino)
+        console.log(retorno)
 
     </script>
     
