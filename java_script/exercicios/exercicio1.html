@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Exercício 1</title>
+
+</head>
+
+<body>
+
+    <!--
+    Crie uma função que dado o objeto a seguir:
+
+        var endereco = {
+            rua: "Rua dos pinheiros",
+            numero: 1293,
+            bairro: "Centro",
+            cidade: "São Paulo",
+            uf: "SP"
+        };
+
+    Retorne o seguinte conteúdo:
+
+    O usuário mora em São Paulo / SP, no bairro Centro, na rua "Rua dos Pinheiros" com
+    nº 1293.
+    -->
+
+    <script>
+
+        function moradia() {
+
+            var endereco = {
+                rua: "Rua dos Pinheiros",
+                numero: 1293,
+                bairro: "Centro",
+                cidade: "São Paulo",
+                uf: "SP"
+            };
+
+            return ('O usuário mora em ' + endereco.cidade + ' / ' + endereco.uf +
+                ', no bairro ' + endereco.bairro + ', na rua "' + endereco.rua +
+                '" com n* ' + endereco.numero + '.')
+        }
+
+        console.log(moradia())
+
+    </script>
+
+</body>
+
+</html>
