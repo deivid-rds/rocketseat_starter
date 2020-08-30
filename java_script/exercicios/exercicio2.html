@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Exercício 2</title>
+
+</head>
+
+<body>
+
+    <!--
+    Crie uma função que dado um intervalo (entre x e y) exiba todos número pares:
+
+        function pares(x, y) {
+        // código aqui
+        }
+        pares(32, 321);
+    -->
+
+    <script>
+
+        var pares = [];
+
+        function exibePar(n1, n2) {
+            while (n1 <= n2) {
+                if ((n1 % 2) == 0) {
+                    pares.push(n1);
+                }
+                n1++
+            }
+        }
+
+        exibePar(0, 20);
+        console.log(pares);
+
+    </script>
+
+</body>
+
+</html>
