@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Curso de JavaScript</title>
+
+</head>
+
+<body>
+
+    <!-- Crie um botão que ao ser clicado cria um novo elemento em tela com a forma de um quadrado
+         vermelho com 100px de altura e largura. Sempre que o botão for clicado um novo quadrado deve
+         aparecer na tela. -->
+
+    <button onclick="criarNovo()">Novo quadrado</button>
+
+    <div id="app">
+    </div>
+
+    <script>
+
+        function criarNovo() {
+
+            var boxElement = document.createElement('div');
+            boxElement.setAttribute('class', 'box');
+
+            var criarElemento = document.querySelector('#app');
+            criarElemento.appendChild(boxElement);
+
+            boxElement.style.width = '100px';
+            boxElement.style.height = '100px';
+            boxElement.style.margin = '10px';
+            boxElement.style.backgroundColor = '#f00';
+
+        }
+
+    </script>
+
+</body>
+
+</html>
