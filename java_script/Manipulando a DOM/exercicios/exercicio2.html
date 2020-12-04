@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            background-color: #000000;
+        }
+    </style>
+
+    <title>Curso de JavaScript</title>
+
+</head>
+
+<body>
+
+    <!-- Utilizando o resultado do primeiro desafio, toda vez que o usuário passar o mouse por cima de
+         algum quadrado troque sua cor para uma cor aleatória gerada pela função abaixo: 
+        function getRandomColor() {
+            var letters = "0123456789ABCDEF";
+            var color = "#";
+            
+            for (var i = 0; i < 6; i++) {
+                color += letters[Math.floor(Math.random() * 16)];
+            }
+            return color;
+        }
+            var newColor = getRandomColor(); // #E943F0
+-->
+
+    <button type="button" onclick="criarNovo()">
+        Criar quadrado
+    </button>
+
+    <div id="app"></div>
+
+    <script>
+
+        // Criar novo quadrado
+        function criarNovo() {
+            var boxElement = document.createElement('div');
+
+            Object.assign(boxElement, {
+                className: 'box',
+                onmouseover: setBackgroundColor
+            });
+
+            var createElement = document.querySelector('#app');
+            createElement.appendChild(boxElement);
+
+            var color = getRandomColor();
+            boxElement.style.backgroundColor = color;
+        }
+
+        // Mudar cor do quadrado
+        function getRandomColor() {
+            var letters = '0912345789ABCDEF';
+            var color = '#';
+
+            for (var i = 0; i < 6; i++) {
+                color += letters[Math.floor(Math.random() * 16)];
+            }
+
+            return color;
+        }
+
+        function setBackgroundColor(event, color) {
+            var color = getRandomColor();
+            this.style.backgroundColor = color;
+        }
+
+    </script>
+
+</body>
+
+</html>
